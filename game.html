@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="./css/gameStyles.css" />
+  </head>
+  <body>
+    <div class="card player-info">
+      <h2>Player Information</h2>
+      <p>Username: <span id="playerUsername"></span></p>
+      <p>Level: <span id="playerLevel">1</span></p>
+      <div class="progress-bar">
+        <div class="progress" id="levelProgress"></div>
+      </div>
+      <p>Score: <span id="playerScore">0</span></p>
+      <p>Money: <span id="playerMoney">0</span></p>
+    </div>
+    <div class="card enemy-card">
+      <h1>Clicker Game</h1>
+      <h2 id="welcomeMessage"></h2>
+      <div class="enemy-container">
+        <img src="./assets/animals/Round/bear.png" alt="Enemy" id="enemy" />
+      </div>
+      <h3>Enemy HP:</h3>
+      <div class="progress-bar">
+        <div class="progress" id="enemyHealthProgress"></div>
+      </div>
+      <button id="attackButton">Attack</button>
+    </div>
+    <div class="card upgrade-weapon">
+      <h2>Upgrade Weapon</h2>
+      <p>Current Damage: <span id="currentDamage">10</span></p>
+      <p>Upgrade Cost: <span id="upgradeCost">50</span></p>
+      <button id="upgradeButton">Upgrade</button>
+    </div>
+    <script src="./js/game.js"></script>
+  </body>
+</html>

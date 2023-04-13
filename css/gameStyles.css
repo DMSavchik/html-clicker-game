@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('./../assets/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.player-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    max-width: 300px;
+}
+
+.enemy-card {
+    align-self: center;
+}
+
+.upgrade-weapon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    max-width: 300px;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #007BFF;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+}
+
+.enemy-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
